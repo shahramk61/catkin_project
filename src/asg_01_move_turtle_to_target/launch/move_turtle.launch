@@ -1,0 +1,12 @@
+<launch>
+  <!-- Start turtlesim node -->
+  <!-- <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" output="screen"/> -->
+
+  <!-- Set parameters for the turtle_guide_to_xy node -->
+  <param name="/turtle_guide_to_xy/target_x" value="8.0"/>
+  <param name="/turtle_guide_to_xy/target_y" value="4.0"/>
+  <param name="/turtle_guide_to_xy/threshold" value="0.5"/>
+
+  <!-- Start your node -->
+  <node name="turtle_guide_to_xy" pkg="asg_01_move_turtle_to_target" type="move_turtle_to_target.py" output="screen"/>
+</launch>
